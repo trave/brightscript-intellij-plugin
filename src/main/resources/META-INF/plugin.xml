@@ -10,7 +10,9 @@
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileTypeFactory implementation="com.interfaced.brs.lang.BSFileTypeFactory"/>
-        <lang.parserDefinition language="BrightScript" implementationClass="com.interfaced.brs.lang.parser.BSParserDefinition"/>
+        <fileTypeFactory implementation="com.interfaced.brs.lang.BrsFileTypeFactory"/>
+        <lang.parserDefinition language="BrightScript" implementationClass="com.interfaced.brs.lang.parser.BrsParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="BrightScript" implementationClass="com.interfaced.brs.editor.highlight.BrsHighlighterFactory"/>
+        <colorSettingsPage implementation="com.interfaced.brs.ide.colors.BrsColorSettingsPage"/>
     </extensions>
 </idea-plugin>
